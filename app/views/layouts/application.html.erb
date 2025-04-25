@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= content_for(:title) || "Sample Sns" %></title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= yield :head %>
+
+    <%# Enable PWA manifest for installable apps (make sure to enable in config/routes.rb too!) %>
+    <%#= tag.link rel: "manifest", href: pwa_manifest_path(format: :json) %>
+
+    <link rel="icon" href="/icon.png" type="image/png">
+    <link rel="icon" href="/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/icon.png">
+
+    <%# Includes all stylesheet files in app/assets/stylesheets %>
+    <%= stylesheet_link_tag 'application', "data-turbo-track": "reload" %>
+    <%= javascript_importmap_tags %>
+    </head>
+
+  <body class="<%= "#{controller_name}-#{action_name}" %>"> <!-- 特定のページだけに適応 --> 
+  <header>
+  <div class="flashNotice">
+  <%= flash[:notice] %>
+  </div>
+  <div class="flashAlert">
+  <%= flash[:alert] %>
+  </div>
+  
+    <% if controller_name == "users" && action_name == "top" %>
+      <%= yield %>  <!-- users/top.html のときだけ上に表示 -->
+    <% end %>
+
+      <div class="navigation">
+      <% unless controller_name == "sessions" && action_name == "new" || controller_name == "registrations" && action_name == "new" %>
+      <% if user_signed_in? %> <!-- ログインしているときのheader -->
+      <div class="destroy_user_session_link">
+              <%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
+            </div>
+            <div class="new_post_link">
+              <%= link_to "新規投稿", posts_path %>
+            </div>
+            <div class="current_user_link">
+              <p>ログイン中のユーザー：<%= link_to current_user.email, "/users/#{current_user.id}" %></p>
+            </div>
+          <% else %>  <!-- ログインしていないときのheader -->
+            <div class="notSign_inAll">
+              <div class="sign_up_link">
+                <%= link_to "アカウント作成", new_user_registration_path %>
+              </div>
+              <div class="sign_in_link">
+                <%= link_to "ログイン", new_user_session_path %>
+              </div>
+              <% unless controller_name == "posts" && action_name == "index" %> <!-- ログインしてなく、もしゲストユーザーだったら表示しない --> 
+                <div class="guest_user_link">
+                  <%= link_to "ゲストユーザー", posts_path %>
+                </div>
+              <% end %>
+            </div>
+            <% unless controller_name == "users" && action_name == "top" %> <!-- ログインしていなく、もしルートパス(users#top)だったら表示しない --> 
+              <div class="new_post_link">
+                <%= link_to "新規投稿", new_post_path%>
+              </div>
+              <div class="root_path_link">
+                <%= link_to "戻る", root_path%>
+              </div>
+            <% end %>
+          <% end %>
+        <% end %>
+      </div>
+    </header>
+    
+
+    <% unless controller_name == "users" && action_name == "top" %>
+      <%= yield %> <!-- ← 各ページの内容 -->
+    <% end %>
+  </body>
+</html>

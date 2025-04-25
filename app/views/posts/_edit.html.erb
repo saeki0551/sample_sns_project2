@@ -1,0 +1,15 @@
+<%= stylesheet_link_tag 'postsIndex', media: 'all', 'data-turbolinks-track': 'reload' %>
+<div class="postsEdit-all">
+    <div>
+        <%= form.label :タイトル %><br>
+        <%= form.text_field :title, :placeholder =>"#{@post.title}" %>
+    </div>
+    <div>
+        <%= form.label :内容 %><br>
+        <%= form.text_area :content, :placeholder =>"#{@post.content}" %> 
+    </div>
+    <div>
+        <%= form.submit "更新" %>
+    </div>
+</div>
+

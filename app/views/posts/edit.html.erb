@@ -1,0 +1,22 @@
+<%= stylesheet_link_tag 'postsIndex', media: 'all', 'data-turbolinks-track': 'reload' %>
+<div>
+    <h1>投稿編集ページ</h1>
+    <div>
+        <%= form_with model: @post, local: true do |form| %>
+            <div>
+                <%= form.label :タイトル %><br>
+                <%= form.text_field :title, :placeholder =>"#{@post.title}" %>
+            </div>
+            <div>
+                <%= form.label :内容 %><br>
+                <%= form.text_area :content, :placeholder =>"#{@post.content}" %> 
+            </div>
+            <div>
+                <%= form.submit "更新" %>
+            </div>
+
+        <% end %>
+    </div>
+</div>
+
+<%= link_to "戻る", posts_path%>

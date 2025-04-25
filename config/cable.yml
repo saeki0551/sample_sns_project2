@@ -1,0 +1,10 @@
+production:
+  adapter: postgresql
+  url: postgresql://sample_db_0t0w_user:rLpo8SNki9fjMPoAUl0ClZW6Q9CI3Kgo@dpg-cvqb371r0fns73em1q40-a.oregon-postgres.render.com/sample_db_0t0w
+  pool: 5
+
+development:
+  adapter: async
+
+test:
+  adapter: async

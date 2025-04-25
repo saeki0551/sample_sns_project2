@@ -1,0 +1,102 @@
+/*
+ * This is a manifest file that'll be compiled into application.css.
+ *
+ * With Propshaft, assets are served efficiently without preprocessing steps. You can still include
+ * application-wide styles in this file, but keep in mind that CSS precedence will follow the standard
+ * cascading order, meaning styles declared later in the document or manifest will override earlier ones,
+ * depending on specificity.
+ *
+ * Consider organizing styles into separate files for maintainability.
+ */
+
+  header{
+    position: fixed;
+  }
+
+  /* users#top のときだけ、position: fixedを無効にする */
+  body.users-top header {
+    position: static !important;
+    text-align: center;
+  }
+  
+ .flashNotice{
+    text-align: center;
+    background-color: rgb(11, 186, 244);
+ }
+
+ .flashAlert{
+    text-align: center;
+    background-color: rgb(250, 46, 46);
+ }
+
+body{
+  background-color: grey;
+}
+
+body.users-top{
+}
+
+body.users-top .sign_up_link{
+   margin-top: 200px;
+   text-align: center;
+}
+
+body.users-top .sign_up_link a{
+   display: inline-block;
+   text-decoration: none;
+   color: white;
+   padding: 10px 20px;
+   border: solid 1px white;
+   border-radius: 10px;    
+ }
+
+ body.users-top .sign_up_link a:hover{
+   background-color: white;
+   color :black
+ }
+  
+body.users-top .sign_in_link{
+   margin-top: 20px;
+   text-align: center;
+}
+
+body.users-top .sign_in_link a{
+   display: inline-block;
+   text-decoration: none;
+   color: white;
+   padding: 10px 20px;
+   border: solid 1px white;
+   border-radius: 10px;
+ }
+
+ body.users-top .sign_in_link a:hover{
+   background-color: white;
+   color :black
+ }
+
+ body.users-top  .guest_user_link{
+    margin-top: 20px;
+    text-align: center;
+   }
+   
+ body.users-top  .guest_user_link a{
+   display: inline-block;
+   text-decoration: none;
+   color: white;
+   padding: 10px 20px;
+   border: solid 1px white;
+   border-radius: 10px;    
+ }
+
+ body.users-top  .guest_user_link a:hover{
+   background-color: white;
+   color :black
+ }
+
+.navigation a{
+  color: white;
+}
+
+ .new_post_link a{
+   color: red;
+ }

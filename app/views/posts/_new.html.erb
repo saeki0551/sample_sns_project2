@@ -1,0 +1,15 @@
+<%= stylesheet_link_tag 'postsNew', media: 'all', 'data-turbolinks-track': 'reload' %>
+<div class="postsNew-all">
+    <div>
+        <%= form.label :タイトル %><br>
+        <%= form.text_field :title %>
+    </div>
+    <div>
+    
+        <%= form.label :内容 %><br>
+        <%= form.text_area :content %> 
+    </div>
+    <div>
+        <%= form.submit "送信" %>
+    </div>
+</div>

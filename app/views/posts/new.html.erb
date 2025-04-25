@@ -1,0 +1,21 @@
+<%= stylesheet_link_tag 'postsNew', media: 'all', 'data-turbolinks-track': 'reload' %>
+<div class="postsNew-all">
+    <h1>新規投稿ページ</h1>
+    <%= form_with model: @post, local: true do |form| %>
+
+        <p><%= form.label :タイトル %><br>
+        <%= form.text_field :title %>
+        </p>
+        
+        <p><%= form.label :内容 %><br>
+        <%= form.text_area :content %> 
+        </p>
+        
+        <p><%= form.submit "送信" %>
+        </p>
+        
+    <% end %>
+    <div class="postsNew-link">
+        <%= link_to "戻る", posts_path%>
+    </div>
+</div>
