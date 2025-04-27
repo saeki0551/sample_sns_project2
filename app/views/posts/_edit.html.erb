@@ -9,6 +9,10 @@
         <%= form.text_area :content, :placeholder =>"#{@post.content}" %> 
     </div>
     <div>
+        <%= form.label :電話番号 %><br>
+        <%= form.text_area :phoneNumber, :placeholder =>"#{@post.phoneNumber}" %> 
+    </div>
+    <div>
         <%= form.submit "更新" %>
     </div>
 </div>
