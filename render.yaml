@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: sample_sns_project2
+    env: ruby
+    buildCommand: "bundle install"
+    startCommand: "rails s -b '0.0.0.0'"
