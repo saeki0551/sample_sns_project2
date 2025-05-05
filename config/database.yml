@@ -1,12 +1,10 @@
 development:
   adapter: postgresql
-  encoding: unicode
-  database: sample_sns_project2_db  # ← 新しいローカルDB名（自由に変えてOK）
-  username: postgres                # ← ローカルPostgreSQLのユーザー名
+  database: sample_sns_development
+  username: postgres
   password: oM7euDL5dorpZd9qS5CA9rRhi6gPohsL
-  host: localhost
+  host: 127.0.0.1
   port: 5432
-  pool: 5
 
 
 

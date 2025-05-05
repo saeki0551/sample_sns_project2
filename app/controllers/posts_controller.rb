@@ -58,6 +58,6 @@ class PostsController < ApplicationController
 
     private
     def post_params #ストロングパラメータ
-        params.require(:post).permit(:title, :content) #パラメーターのキー
+        params.require(:post).permit(:title, :content, :phoneNumber)  #パラメーターのキー
     end
 end
