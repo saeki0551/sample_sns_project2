@@ -23,6 +23,8 @@ Rails.application.routes.draw do
 
   get "/posts/:id/destroy", to: "posts#destroy"
 
+  get "users/:id/show", to: "users#show"
+
   namespace :api do
     namespace :v1 do
       resources :users, only: [:index, :show]
