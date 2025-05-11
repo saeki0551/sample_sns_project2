@@ -20,11 +20,12 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   root "users#top"
   
+  resources :users
+  
   resources :posts
 
   get "/posts/:id/destroy", to: "posts#destroy"
 
-  resources :users
 
   # get "users/:id/show", to: "users#show"
 
