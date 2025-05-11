@@ -56,6 +56,10 @@ class PostsController < ApplicationController
         redirect_to action: 'index' 
     end
 
+    def show
+        @post = Post.find(params[:id])
+    end
+
     private
     def post_params #ストロングパラメータ
         params.require(:post).permit(:title, :content, :phoneNumber)  #パラメーターのキー

@@ -17,7 +17,7 @@
     <% @posts.each do |post| %>
         <div class="postsContainer">
             <p>投稿者ID：<%= link_to( post.user_id, user_path(id: post.user_id)) %></p>
-            <p>投稿ID：<%= post.id %></p>
+            <p>投稿ID：<%= link_to( post.id, post_path(id: post.id))%></p>
             <p>タイトル</p>
             <span><%= post.title %></span>
             <p>内容</p>
