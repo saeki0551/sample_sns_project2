@@ -22,12 +22,13 @@ Rails.application.routes.draw do
   
   resources :users
   
+  get "/users/:id", to: "users#show"
+
   resources :posts
 
   get "/posts/:id/destroy", to: "posts#destroy"
 
 
-  # get "users/:id/show", to: "users#show"
 
   namespace :api do
     namespace :v1 do
