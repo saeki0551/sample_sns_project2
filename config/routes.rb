@@ -19,6 +19,7 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   root "users#top"
+  
   resources :posts
 
   get "/posts/:id/destroy", to: "posts#destroy"
