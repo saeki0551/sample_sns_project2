@@ -3,13 +3,6 @@ require "active_support/core_ext/integer/time"
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
-  # ログを標準出力に出力する設定
-  config.logger = Logger.new(STDOUT)
-
-  # ログレベルをデバッグに設定
-  config.log_level = :debug
-
-
   config.action_mailer.default_url_options = { host: 'sample-sns.fly.dev' }
 
   # Allow all hosts to make requests to the app
