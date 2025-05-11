@@ -20,7 +20,7 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   root "users#top"
   
-  resources :users
+  resources :users, only: [:show]
   
   get "/users/:id", to: "users#show"
 
