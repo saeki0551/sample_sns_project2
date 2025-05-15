@@ -5,5 +5,9 @@ class UsersController < ApplicationController
         format.json { render json: @data } # JSON形式
       end
     end
+
+    def show
+      @user = User.find(params[:id])
+    end
   end
   
