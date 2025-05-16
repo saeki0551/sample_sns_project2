@@ -14,6 +14,10 @@
         <%= form.text_area :phoneNumber %>
     </div>
     <div>
+        <%= form.label :画像 %><br>
+        <%= form.file_field :image, accept: "image/*" %>
+    </div>
+    <div>
         <%= form.submit "送信" %>
     </div>
 </div>

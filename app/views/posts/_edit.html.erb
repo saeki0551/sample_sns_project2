@@ -13,6 +13,10 @@
         <%= form.text_area :phoneNumber, :placeholder =>"#{@post.phoneNumber}" %> 
     </div>
     <div>
+        <%= form.label :画像 %><br>
+        <%= form.file_field :image, :placeholder =>"#{@post.image}" %> 
+    </div>
+    <div>
         <%= form.submit "更新" %>
     </div>
 </div>

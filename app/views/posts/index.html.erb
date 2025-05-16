@@ -20,10 +20,19 @@
             <p>投稿ID：<%= link_to( post.id, post_path(id: post.id))%></p>
             <p>タイトル</p>
             <span><%= post.title %></span>
+
             <p>内容</p>
             <span><%= post.content %></span>
+
             <p>電話番号</p>
-            <span><%= post.phoneNumber %></span>
+            <span><%= post.phoneNumber %></span></br>
+
+            <% if post.image.attached? %>
+                <%= image_tag post.image, size: "150x150" %></br>
+            <% else %>
+                <%= image_tag '/images/default.jpg', size: "150x150" %></br>
+            <% end %>
+
             <% if user_signed_in? %>
                 <div class="postsIndex-link">
                     <div class="edit_post_link">
