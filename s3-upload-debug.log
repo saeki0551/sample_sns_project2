@@ -1,0 +1,255 @@
+2025-05-19 17:40:31,285 - MainThread - awscli.clidriver - DEBUG - CLI version: aws-cli/2.27.17 Python/3.13.3 Windows/11 exe/AMD64
+2025-05-19 17:40:31,285 - MainThread - awscli.clidriver - DEBUG - Arguments entered to CLI: ['s3', 'cp', 'test.txt', 's3://bucket225125/path/to/test.txt', '--debug']
+2025-05-19 17:40:31,321 - MainThread - botocore.hooks - DEBUG - Event building-command-table.main: calling handler <function add_s3 at 0x0000013CE2A6FBA0>
+2025-05-19 17:40:31,321 - MainThread - botocore.hooks - DEBUG - Event building-command-table.main: calling handler <function add_ddb at 0x0000013CE28314E0>
+2025-05-19 17:40:31,321 - MainThread - botocore.hooks - DEBUG - Event building-command-table.main: calling handler <bound method BasicCommand.add_command of <class 'awscli.customizations.configure.configure.ConfigureCommand'>>
+2025-05-19 17:40:31,321 - MainThread - botocore.hooks - DEBUG - Event building-command-table.main: calling handler <function change_name at 0x0000013CE25C4540>
+2025-05-19 17:40:31,321 - MainThread - botocore.hooks - DEBUG - Event building-command-table.main: calling handler <function change_name at 0x0000013CE25C54E0>
+2025-05-19 17:40:31,321 - MainThread - botocore.hooks - DEBUG - Event building-command-table.main: calling handler <function alias_opsworks_cm at 0x0000013CE29A7600>
+2025-05-19 17:40:31,321 - MainThread - botocore.hooks - DEBUG - Event building-command-table.main: calling handler <function add_history_commands at 0x0000013CE2984540>
+2025-05-19 17:40:31,321 - MainThread - botocore.hooks - DEBUG - Event building-command-table.main: calling handler <bound method BasicCommand.add_command of <class 'awscli.customizations.devcommands.CLIDevCommand'>>
+2025-05-19 17:40:31,321 - MainThread - botocore.hooks - DEBUG - Event building-command-table.main: calling handler <function add_waiters at 0x0000013CE2A98360>
+2025-05-19 17:40:31,321 - MainThread - botocore.hooks - DEBUG - Event building-command-table.main: calling handler <bound method AliasSubCommandInjector.on_building_command_table of <awscli.alias.AliasSubCommandInjector object at 0x0000013CE2AE1160>>
+2025-05-19 17:40:31,322 - MainThread - botocore.loaders - DEBUG - Loading JSON file: C:\Program Files\Amazon\AWSCLIV2\awscli\data\cli.json
+2025-05-19 17:40:31,324 - MainThread - botocore.hooks - DEBUG - Event top-level-args-parsed: calling handler <function resolve_types at 0x0000013CE294FB00>
+2025-05-19 17:40:31,324 - MainThread - botocore.hooks - DEBUG - Event top-level-args-parsed: calling handler <function no_sign_request at 0x0000013CE294FE20>
+2025-05-19 17:40:31,324 - MainThread - botocore.hooks - DEBUG - Event top-level-args-parsed: calling handler <function resolve_verify_ssl at 0x0000013CE294FD80>
+2025-05-19 17:40:31,324 - MainThread - botocore.hooks - DEBUG - Event top-level-args-parsed: calling handler <function resolve_cli_read_timeout at 0x0000013CE294FF60>
+2025-05-19 17:40:31,324 - MainThread - botocore.hooks - DEBUG - Event top-level-args-parsed: calling handler <function resolve_cli_connect_timeout at 0x0000013CE294FEC0>
+2025-05-19 17:40:31,324 - MainThread - botocore.hooks - DEBUG - Event top-level-args-parsed: calling handler <built-in method update of dict object at 0x0000013CE2B0FE80>
+2025-05-19 17:40:31,325 - MainThread - awscli.clidriver - DEBUG - CLI version: aws-cli/2.27.17 Python/3.13.3 Windows/11 exe/AMD64
+2025-05-19 17:40:31,325 - MainThread - awscli.clidriver - DEBUG - Arguments entered to CLI: ['s3', 'cp', 'test.txt', 's3://bucket225125/path/to/test.txt', '--debug']
+2025-05-19 17:40:31,325 - MainThread - botocore.hooks - DEBUG - Event session-initialized: calling handler <function add_timestamp_parser at 0x0000013CE2A7AF20>
+2025-05-19 17:40:31,325 - MainThread - botocore.hooks - DEBUG - Event session-initialized: calling handler <function register_uri_param_handler at 0x0000013CE1B21D00>
+2025-05-19 17:40:31,325 - MainThread - botocore.hooks - DEBUG - Event session-initialized: calling handler <function add_binary_formatter at 0x0000013CE23C18A0>
+2025-05-19 17:40:31,326 - MainThread - botocore.hooks - DEBUG - Event session-initialized: calling handler <function no_pager_handler at 0x0000013CE22EBC40>
+2025-05-19 17:40:31,326 - MainThread - botocore.hooks - DEBUG - Event session-initialized: calling handler <function inject_assume_role_provider_cache at 0x0000013CE23C0E00>
+2025-05-19 17:40:31,327 - MainThread - botocore.utils - DEBUG - IMDS ENDPOINT: http://169.254.169.254/
+2025-05-19 17:40:31,328 - MainThread - botocore.hooks - DEBUG - Event session-initialized: calling handler <function attach_history_handler at 0x0000013CE2976CA0>
+2025-05-19 17:40:31,329 - MainThread - botocore.hooks - DEBUG - Event session-initialized: calling handler <function inject_json_file_cache at 0x0000013CE281FC40>
+2025-05-19 17:40:31,329 - MainThread - botocore.hooks - DEBUG - Event building-command-table.s3: calling handler <function add_waiters at 0x0000013CE2A98360>
+2025-05-19 17:40:31,329 - MainThread - botocore.hooks - DEBUG - Event building-command-table.s3: calling handler <bound method AliasSubCommandInjector.on_building_command_table of <awscli.alias.AliasSubCommandInjector object at 0x0000013CE2AE1160>>
+2025-05-19 17:40:31,329 - MainThread - botocore.hooks - DEBUG - Event building-command-table.s3_cp: calling handler <function add_waiters at 0x0000013CE2A98360>
+2025-05-19 17:40:31,330 - MainThread - botocore.hooks - DEBUG - Event building-command-table.s3_cp: calling handler <bound method AliasSubCommandInjector.on_building_command_table of <awscli.alias.AliasSubCommandInjector object at 0x0000013CE2AE1160>>
+2025-05-19 17:40:31,331 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.custom.cp.paths: calling handler <awscli.paramfile.URIArgumentHandler object at 0x0000013CE2AE1BE0>
+2025-05-19 17:40:31,331 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.custom.cp.dryrun: calling handler <awscli.paramfile.URIArgumentHandler object at 0x0000013CE2AE1BE0>
+2025-05-19 17:40:31,331 - MainThread - botocore.hooks - DEBUG - Event process-cli-arg.custom.cp: calling handler <awscli.argprocess.ParamShorthandParser object at 0x0000013CE29AB380>
+2025-05-19 17:40:31,331 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.custom.cp.quiet: calling handler <awscli.paramfile.URIArgumentHandler object at 0x0000013CE2AE1BE0>
+2025-05-19 17:40:31,331 - MainThread - botocore.hooks - DEBUG - Event process-cli-arg.custom.cp: calling handler <awscli.argprocess.ParamShorthandParser object at 0x0000013CE29AB380>
+2025-05-19 17:40:31,331 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.custom.cp.anonymous: calling handler <awscli.paramfile.URIArgumentHandler object at 0x0000013CE2AE1BE0>
+2025-05-19 17:40:31,331 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.custom.cp.acl: calling handler <awscli.paramfile.URIArgumentHandler object at 0x0000013CE2AE1BE0>
+2025-05-19 17:40:31,331 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.custom.cp.follow-symlinks: calling handler <awscli.paramfile.URIArgumentHandler object at 0x0000013CE2AE1BE0>
+2025-05-19 17:40:31,332 - MainThread - botocore.hooks - DEBUG - Event process-cli-arg.custom.cp: calling handler <awscli.argprocess.ParamShorthandParser object at 0x0000013CE29AB380>
+2025-05-19 17:40:31,332 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.custom.cp.anonymous: calling handler <awscli.paramfile.URIArgumentHandler object at 0x0000013CE2AE1BE0>
+2025-05-19 17:40:31,332 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.custom.cp.sse: calling handler <awscli.paramfile.URIArgumentHandler object at 0x0000013CE2AE1BE0>
+2025-05-19 17:40:31,332 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.custom.cp.sse-c: calling handler <awscli.paramfile.URIArgumentHandler object at 0x0000013CE2AE1BE0>
+2025-05-19 17:40:31,332 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.custom.cp.sse-c-key: calling handler <awscli.paramfile.URIArgumentHandler object at 0x0000013CE2AE1BE0>
+2025-05-19 17:40:31,332 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.custom.cp.sse-kms-key-id: calling handler <awscli.paramfile.URIArgumentHandler object at 0x0000013CE2AE1BE0>
+2025-05-19 17:40:31,332 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.custom.cp.sse-c-copy-source: calling handler <awscli.paramfile.URIArgumentHandler object at 0x0000013CE2AE1BE0>
+2025-05-19 17:40:31,332 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.custom.cp.sse-c-copy-source-key: calling handler <awscli.paramfile.URIArgumentHandler object at 0x0000013CE2AE1BE0>
+2025-05-19 17:40:31,332 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.custom.cp.storage-class: calling handler <awscli.paramfile.URIArgumentHandler object at 0x0000013CE2AE1BE0>
+2025-05-19 17:40:31,332 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.custom.cp.grants: calling handler <awscli.paramfile.URIArgumentHandler object at 0x0000013CE2AE1BE0>
+2025-05-19 17:40:31,332 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.custom.cp.website-redirect: calling handler <awscli.paramfile.URIArgumentHandler object at 0x0000013CE2AE1BE0>
+2025-05-19 17:40:31,332 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.custom.cp.content-type: calling handler <awscli.paramfile.URIArgumentHandler object at 0x0000013CE2AE1BE0>
+2025-05-19 17:40:31,332 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.custom.cp.cache-control: calling handler <awscli.paramfile.URIArgumentHandler object at 0x0000013CE2AE1BE0>
+2025-05-19 17:40:31,332 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.custom.cp.content-disposition: calling handler <awscli.paramfile.URIArgumentHandler object at 0x0000013CE2AE1BE0>
+2025-05-19 17:40:31,332 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.custom.cp.content-encoding: calling handler <awscli.paramfile.URIArgumentHandler object at 0x0000013CE2AE1BE0>
+2025-05-19 17:40:31,332 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.custom.cp.content-language: calling handler <awscli.paramfile.URIArgumentHandler object at 0x0000013CE2AE1BE0>
+2025-05-19 17:40:31,332 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.custom.cp.expires: calling handler <awscli.paramfile.URIArgumentHandler object at 0x0000013CE2AE1BE0>
+2025-05-19 17:40:31,332 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.custom.cp.source-region: calling handler <awscli.paramfile.URIArgumentHandler object at 0x0000013CE2AE1BE0>
+2025-05-19 17:40:31,332 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.custom.cp.only-show-errors: calling handler <awscli.paramfile.URIArgumentHandler object at 0x0000013CE2AE1BE0>
+2025-05-19 17:40:31,332 - MainThread - botocore.hooks - DEBUG - Event process-cli-arg.custom.cp: calling handler <awscli.argprocess.ParamShorthandParser object at 0x0000013CE29AB380>
+2025-05-19 17:40:31,332 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.custom.cp.anonymous: calling handler <awscli.paramfile.URIArgumentHandler object at 0x0000013CE2AE1BE0>
+2025-05-19 17:40:31,332 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.custom.cp.page-size: calling handler <awscli.paramfile.URIArgumentHandler object at 0x0000013CE2AE1BE0>
+2025-05-19 17:40:31,332 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.custom.cp.ignore-glacier-warnings: calling handler <awscli.paramfile.URIArgumentHandler object at 0x0000013CE2AE1BE0>
+2025-05-19 17:40:31,332 - MainThread - botocore.hooks - DEBUG - Event process-cli-arg.custom.cp: calling handler <awscli.argprocess.ParamShorthandParser object at 0x0000013CE29AB380>
+2025-05-19 17:40:31,332 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.custom.cp.force-glacier-transfer: calling handler <awscli.paramfile.URIArgumentHandler object at 0x0000013CE2AE1BE0>
+2025-05-19 17:40:31,332 - MainThread - botocore.hooks - DEBUG - Event process-cli-arg.custom.cp: calling handler <awscli.argprocess.ParamShorthandParser object at 0x0000013CE29AB380>
+2025-05-19 17:40:31,332 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.custom.cp.request-payer: calling handler <awscli.paramfile.URIArgumentHandler object at 0x0000013CE2AE1BE0>
+2025-05-19 17:40:31,333 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.custom.cp.checksum-mode: calling handler <awscli.paramfile.URIArgumentHandler object at 0x0000013CE2AE1BE0>
+2025-05-19 17:40:31,333 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.custom.cp.checksum-algorithm: calling handler <awscli.paramfile.URIArgumentHandler object at 0x0000013CE2AE1BE0>
+2025-05-19 17:40:31,333 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.custom.cp.metadata: calling handler <awscli.paramfile.URIArgumentHandler object at 0x0000013CE2AE1BE0>
+2025-05-19 17:40:31,333 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.custom.cp.copy-props: calling handler <awscli.paramfile.URIArgumentHandler object at 0x0000013CE2AE1BE0>
+2025-05-19 17:40:31,333 - MainThread - botocore.hooks - DEBUG - Event process-cli-arg.custom.cp: calling handler <awscli.argprocess.ParamShorthandParser object at 0x0000013CE29AB380>
+2025-05-19 17:40:31,333 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.custom.cp.metadata-directive: calling handler <awscli.paramfile.URIArgumentHandler object at 0x0000013CE2AE1BE0>
+2025-05-19 17:40:31,333 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.custom.cp.expected-size: calling handler <awscli.paramfile.URIArgumentHandler object at 0x0000013CE2AE1BE0>
+2025-05-19 17:40:31,333 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.custom.cp.anonymous: calling handler <awscli.paramfile.URIArgumentHandler object at 0x0000013CE2AE1BE0>
+2025-05-19 17:40:31,333 - MainThread - botocore.credentials - DEBUG - Looking for credentials via: env
+2025-05-19 17:40:31,333 - MainThread - botocore.credentials - INFO - Found credentials in environment variables.
+2025-05-19 17:40:31,335 - MainThread - botocore.loaders - DEBUG - Loading JSON file: C:\Program Files\Amazon\AWSCLIV2\awscli\botocore\data\endpoints.json
+2025-05-19 17:40:31,352 - MainThread - botocore.hooks - DEBUG - Event choose-service-name: calling handler <function handle_service_name_alias at 0x0000013CE19E7060>
+2025-05-19 17:40:31,390 - MainThread - botocore.loaders - DEBUG - Loading JSON file: C:\Program Files\Amazon\AWSCLIV2\awscli\botocore\data\s3\2006-03-01\service-2.json
+2025-05-19 17:40:31,398 - MainThread - botocore.loaders - DEBUG - Loading JSON file: C:\Program Files\Amazon\AWSCLIV2\awscli\botocore\data\s3\2006-03-01\service-2.sdk-extras.json
+2025-05-19 17:40:31,435 - MainThread - botocore.loaders - DEBUG - Loading JSON file: C:\Program Files\Amazon\AWSCLIV2\awscli\botocore\data\s3\2006-03-01\endpoint-rule-set-1.json
+2025-05-19 17:40:31,438 - MainThread - botocore.loaders - DEBUG - Loading JSON file: C:\Program Files\Amazon\AWSCLIV2\awscli\botocore\data\partitions.json
+2025-05-19 17:40:31,439 - MainThread - botocore.hooks - DEBUG - Event creating-client-class.s3: calling handler <function add_generate_presigned_post at 0x0000013CE192DE40>
+2025-05-19 17:40:31,439 - MainThread - botocore.hooks - DEBUG - Event creating-client-class.s3: calling handler <function add_generate_presigned_url at 0x0000013CE192DBC0>
+2025-05-19 17:40:31,439 - MainThread - botocore.configprovider - DEBUG - Looking for endpoint for s3 via: environment_service
+2025-05-19 17:40:31,439 - MainThread - botocore.configprovider - DEBUG - Looking for endpoint for s3 via: environment_global
+2025-05-19 17:40:31,439 - MainThread - botocore.configprovider - DEBUG - Looking for endpoint for s3 via: config_service
+2025-05-19 17:40:31,439 - MainThread - botocore.configprovider - DEBUG - Looking for endpoint for s3 via: config_global
+2025-05-19 17:40:31,439 - MainThread - botocore.configprovider - DEBUG - No configured endpoint found.
+2025-05-19 17:40:31,441 - MainThread - botocore.endpoint - DEBUG - Setting s3 timeout as (60, 60)
+2025-05-19 17:40:31,443 - MainThread - botocore.utils - DEBUG - Registering S3 region redirector handler
+2025-05-19 17:40:31,443 - MainThread - botocore.utils - DEBUG - Registering S3Express Identity Resolver
+2025-05-19 17:40:31,443 - MainThread - botocore.hooks - DEBUG - Event choose-service-name: calling handler <function handle_service_name_alias at 0x0000013CE19E7060>
+2025-05-19 17:40:31,444 - MainThread - botocore.hooks - DEBUG - Event creating-client-class.s3: calling handler <function add_generate_presigned_post at 0x0000013CE192DE40>
+2025-05-19 17:40:31,444 - MainThread - botocore.hooks - DEBUG - Event creating-client-class.s3: calling handler <function add_generate_presigned_url at 0x0000013CE192DBC0>
+2025-05-19 17:40:31,444 - MainThread - botocore.configprovider - DEBUG - Looking for endpoint for s3 via: environment_service
+2025-05-19 17:40:31,444 - MainThread - botocore.configprovider - DEBUG - Looking for endpoint for s3 via: environment_global
+2025-05-19 17:40:31,444 - MainThread - botocore.configprovider - DEBUG - Looking for endpoint for s3 via: config_service
+2025-05-19 17:40:31,444 - MainThread - botocore.configprovider - DEBUG - Looking for endpoint for s3 via: config_global
+2025-05-19 17:40:31,444 - MainThread - botocore.configprovider - DEBUG - No configured endpoint found.
+2025-05-19 17:40:31,446 - MainThread - botocore.endpoint - DEBUG - Setting s3 timeout as (60, 60)
+2025-05-19 17:40:31,447 - MainThread - botocore.utils - DEBUG - Registering S3 region redirector handler
+2025-05-19 17:40:31,448 - MainThread - botocore.utils - DEBUG - Registering S3Express Identity Resolver
+2025-05-19 17:40:31,448 - MainThread - botocore.hooks - DEBUG - Event choose-service-name: calling handler <function handle_service_name_alias at 0x0000013CE19E7060>
+2025-05-19 17:40:31,461 - MainThread - botocore.hooks - DEBUG - Event creating-client-class.s3: calling handler <function add_generate_presigned_post at 0x0000013CE192DE40>
+2025-05-19 17:40:31,461 - MainThread - botocore.hooks - DEBUG - Event creating-client-class.s3: calling handler <function add_generate_presigned_url at 0x0000013CE192DBC0>
+2025-05-19 17:40:31,461 - MainThread - botocore.configprovider - DEBUG - Looking for endpoint for s3 via: environment_service
+2025-05-19 17:40:31,461 - MainThread - botocore.configprovider - DEBUG - Looking for endpoint for s3 via: environment_global
+2025-05-19 17:40:31,461 - MainThread - botocore.configprovider - DEBUG - Looking for endpoint for s3 via: config_service
+2025-05-19 17:40:31,461 - MainThread - botocore.configprovider - DEBUG - Looking for endpoint for s3 via: config_global
+2025-05-19 17:40:31,461 - MainThread - botocore.configprovider - DEBUG - No configured endpoint found.
+2025-05-19 17:40:31,462 - MainThread - botocore.endpoint - DEBUG - Setting s3 timeout as (60, 60)
+2025-05-19 17:40:31,464 - MainThread - botocore.utils - DEBUG - Registering S3 region redirector handler
+2025-05-19 17:40:31,464 - MainThread - botocore.utils - DEBUG - Registering S3Express Identity Resolver
+2025-05-19 17:40:31,464 - MainThread - awscli.customizations.s3.factory - DEBUG - S3 CRT client optimized for system: False
+2025-05-19 17:40:31,464 - MainThread - awscli.customizations.s3.factory - DEBUG - Auto resolved s3 transfer client to: classic
+2025-05-19 17:40:31,464 - MainThread - awscli.customizations.s3.factory - DEBUG - Using a multipart threshold of 8388608 and a part size of 8388608
+2025-05-19 17:40:31,467 - MainThread - s3transfer.utils - DEBUG - Acquiring 0
+2025-05-19 17:40:31,467 - ThreadPoolExecutor-1_0 - s3transfer.tasks - DEBUG - UploadSubmissionTask(transfer_id=0, {'transfer_future': <s3transfer.futures.TransferFuture object at 0x0000013CE46B52B0>}) about to wait for the following futures []
+2025-05-19 17:40:31,467 - ThreadPoolExecutor-1_0 - s3transfer.tasks - DEBUG - UploadSubmissionTask(transfer_id=0, {'transfer_future': <s3transfer.futures.TransferFuture object at 0x0000013CE46B52B0>}) done waiting for dependent futures
+2025-05-19 17:40:31,468 - ThreadPoolExecutor-1_0 - s3transfer.tasks - DEBUG - Executing task UploadSubmissionTask(transfer_id=0, {'transfer_future': <s3transfer.futures.TransferFuture object at 0x0000013CE46B52B0>}) with kwargs {'client': <botocore.client.S3 object at 0x0000013CE2B68590>, 'config': <s3transfer.manager.TransferConfig object at 0x0000013CE2B6AE40>, 'osutil': <s3transfer.utils.OSUtils object at 0x0000013CE45CDFD0>, 'request_executor': <s3transfer.futures.BoundedExecutor object at 0x0000013CE45CE660>, 'transfer_future': <s3transfer.futures.TransferFuture object at 0x0000013CE46B52B0>}
+2025-05-19 17:40:31,501 - ThreadPoolExecutor-1_0 - s3transfer.futures - DEBUG - Submitting task PutObjectTask(transfer_id=0, {'bucket': 'bucket225125', 'key': 'path/to/test.txt', 'extra_args': {'ChecksumAlgorithm': 'CRC64NVME', 'ContentType': 'text/plain'}}) to executor <s3transfer.futures.BoundedExecutor object at 0x0000013CE45CE660> for transfer request: 0.
+2025-05-19 17:40:31,501 - ThreadPoolExecutor-1_0 - s3transfer.utils - DEBUG - Acquiring 0
+2025-05-19 17:40:31,502 - ThreadPoolExecutor-0_0 - s3transfer.tasks - DEBUG - PutObjectTask(transfer_id=0, {'bucket': 'bucket225125', 'key': 'path/to/test.txt', 'extra_args': {'ChecksumAlgorithm': 'CRC64NVME', 'ContentType': 'text/plain'}}) about to wait for the following futures []
+2025-05-19 17:40:31,502 - ThreadPoolExecutor-1_0 - s3transfer.utils - DEBUG - Releasing acquire 0/None
+2025-05-19 17:40:31,502 - ThreadPoolExecutor-0_0 - s3transfer.tasks - DEBUG - PutObjectTask(transfer_id=0, {'bucket': 'bucket225125', 'key': 'path/to/test.txt', 'extra_args': {'ChecksumAlgorithm': 'CRC64NVME', 'ContentType': 'text/plain'}}) done waiting for dependent futures
+2025-05-19 17:40:31,503 - ThreadPoolExecutor-0_0 - s3transfer.tasks - DEBUG - Executing task PutObjectTask(transfer_id=0, {'bucket': 'bucket225125', 'key': 'path/to/test.txt', 'extra_args': {'ChecksumAlgorithm': 'CRC64NVME', 'ContentType': 'text/plain'}}) with kwargs {'client': <botocore.client.S3 object at 0x0000013CE2B68590>, 'fileobj': <s3transfer.utils.ReadFileChunk object at 0x0000013CE46B5E80>, 'bucket': 'bucket225125', 'key': 'path/to/test.txt', 'extra_args': {'ChecksumAlgorithm': 'CRC64NVME', 'ContentType': 'text/plain'}}
+2025-05-19 17:40:31,503 - ThreadPoolExecutor-0_0 - botocore.hooks - DEBUG - Event provide-client-params.s3.PutObject: calling handler <function base64_decode_input_blobs at 0x0000013CE23C1940>
+2025-05-19 17:40:31,503 - ThreadPoolExecutor-0_0 - botocore.hooks - DEBUG - Event before-parameter-build.s3.PutObject: calling handler <function validate_ascii_metadata at 0x0000013CE1A08400>
+2025-05-19 17:40:31,503 - ThreadPoolExecutor-0_0 - botocore.hooks - DEBUG - Event before-parameter-build.s3.PutObject: calling handler <function sse_md5 at 0x0000013CE19E76A0>
+2025-05-19 17:40:31,503 - ThreadPoolExecutor-0_0 - botocore.hooks - DEBUG - Event before-parameter-build.s3.PutObject: calling handler <function convert_body_to_file_like_object at 0x0000013CE1A08E00>
+2025-05-19 17:40:31,503 - ThreadPoolExecutor-0_0 - botocore.hooks - DEBUG - Event before-parameter-build.s3.PutObject: calling handler <function validate_bucket_name at 0x0000013CE19E7600>
+2025-05-19 17:40:31,504 - ThreadPoolExecutor-0_0 - botocore.hooks - DEBUG - Event before-parameter-build.s3.PutObject: calling handler <function remove_bucket_from_url_paths_from_model at 0x0000013CE1A09800>
+2025-05-19 17:40:31,504 - ThreadPoolExecutor-0_0 - botocore.hooks - DEBUG - Event before-parameter-build.s3.PutObject: calling handler <bound method S3RegionRedirectorv2.annotate_request_context of <botocore.utils.S3RegionRedirectorv2 object at 0x0000013CE4699950>>
+2025-05-19 17:40:31,504 - ThreadPoolExecutor-0_0 - botocore.hooks - DEBUG - Event before-parameter-build.s3.PutObject: calling handler <bound method S3ExpressIdentityResolver.inject_signing_cache_key of <botocore.utils.S3ExpressIdentityResolver object at 0x0000013CE4699A90>>
+2025-05-19 17:40:31,504 - ThreadPoolExecutor-0_0 - botocore.hooks - DEBUG - Event before-parameter-build.s3.PutObject: calling handler <function generate_idempotent_uuid at 0x0000013CE19E7420>
+2025-05-19 17:40:31,504 - ThreadPoolExecutor-0_0 - botocore.hooks - DEBUG - Event before-parameter-build.s3.PutObject: calling handler <function _handle_request_validation_mode_member at 0x0000013CE1A09EE0>
+2025-05-19 17:40:31,504 - ThreadPoolExecutor-0_0 - botocore.hooks - DEBUG - Event before-endpoint-resolution.s3: calling handler <function customize_endpoint_resolver_builtins at 0x0000013CE1A099E0>
+2025-05-19 17:40:31,504 - ThreadPoolExecutor-0_0 - botocore.hooks - DEBUG - Event before-endpoint-resolution.s3: calling handler <bound method S3RegionRedirectorv2.redirect_from_cache of <botocore.utils.S3RegionRedirectorv2 object at 0x0000013CE4699950>>
+2025-05-19 17:40:31,504 - ThreadPoolExecutor-0_0 - botocore.regions - DEBUG - Calling endpoint provider with parameters: {'Bucket': 'bucket225125', 'Region': 'ap-southeast-2', 'UseFIPS': False, 'UseDualStack': False, 'ForcePathStyle': False, 'Accelerate': False, 'UseGlobalEndpoint': False, 'Key': 'path/to/test.txt', 'DisableMultiRegionAccessPoints': False, 'UseArnRegion': True}
+2025-05-19 17:40:31,505 - ThreadPoolExecutor-0_0 - botocore.regions - DEBUG - Endpoint provider result: https://bucket225125.s3.ap-southeast-2.amazonaws.com
+2025-05-19 17:40:31,505 - ThreadPoolExecutor-0_0 - botocore.regions - DEBUG - Selecting from endpoint provider's list of auth schemes: "sigv4". User selected auth scheme is: "None"
+2025-05-19 17:40:31,505 - ThreadPoolExecutor-0_0 - botocore.regions - DEBUG - Selected auth type "v4" as "v4" with signing context params: {'region': 'ap-southeast-2', 'signing_name': 's3', 'disableDoubleEncoding': True}
+2025-05-19 17:40:31,505 - ThreadPoolExecutor-0_0 - botocore.hooks - DEBUG - Event before-call.s3.PutObject: calling handler <function add_expect_header at 0x0000013CE19E79C0>
+2025-05-19 17:40:31,505 - ThreadPoolExecutor-0_0 - botocore.handlers - DEBUG - Adding expect 100 continue header to request.
+2025-05-19 17:40:31,505 - ThreadPoolExecutor-0_0 - botocore.hooks - DEBUG - Event before-call.s3.PutObject: calling handler <bound method S3ExpressIdentityResolver.apply_signing_cache_key of <botocore.utils.S3ExpressIdentityResolver object at 0x0000013CE4699A90>>
+2025-05-19 17:40:31,505 - ThreadPoolExecutor-0_0 - botocore.hooks - DEBUG - Event before-call.s3.PutObject: calling handler <function add_query_compatibility_header at 0x0000013CE1A09E40>
+2025-05-19 17:40:31,505 - ThreadPoolExecutor-0_0 - botocore.hooks - DEBUG - Event before-call.s3.PutObject: calling handler <function inject_api_version_header_if_needed at 0x0000013CE1A08F40>
+2025-05-19 17:40:31,505 - ThreadPoolExecutor-0_0 - botocore.endpoint - DEBUG - Making request for OperationModel(name=PutObject) with params: {'url_path': '/path/to/test.txt', 'query_string': {}, 'method': 'PUT', 'headers': {'x-amz-sdk-checksum-algorithm': 'CRC64NVME', 'Content-Type': 'text/plain', 'User-Agent': 'aws-cli/2.27.17 md/awscrt#0.26.1 ua/2.1 os/windows#11 md/arch#amd64 lang/python#3.13.3 md/pyimpl#CPython m/G cfg/retry-mode#standard md/installer#exe md/prompt#off md/command#s3.cp', 'Expect': '100-continue', 'Transfer-Encoding': 'chunked', 'Content-Encoding': 'aws-chunked', 'X-Amz-Trailer': 'x-amz-checksum-crc64nvme', 'X-Amz-Decoded-Content-Length': '12'}, 'body': <botocore.httpchecksum.AwsChunkedWrapper object at 0x0000013CE46B5400>, 'auth_path': '/bucket225125/path/to/test.txt', 'url': 'https://bucket225125.s3.ap-southeast-2.amazonaws.com/path/to/test.txt', 'context': {'client_region': 'ap-southeast-2', 'client_config': <botocore.config.Config object at 0x0000013CE2D928B0>, 'has_streaming_input': True, 'auth_type': 'v4', 'unsigned_payload': None, 's3_redirect': {'redirected': False, 'bucket': 'bucket225125', 'params': {'Bucket': 'bucket225125', 'Key': 'path/to/test.txt', 'Body': <s3transfer.utils.ReadFileChunk object at 0x0000013CE46B5E80>, 'ChecksumAlgorithm': 'CRC64NVME', 'ContentType': 'text/plain'}}, 'S3Express': {'bucket_name': 'bucket225125'}, 'signing': {'region': 'ap-southeast-2', 'signing_name': 's3', 'disableDoubleEncoding': True}, 'endpoint_properties': {'authSchemes': [{'disableDoubleEncoding': True, 'name': 'sigv4', 'signingName': 's3', 'signingRegion': 'ap-southeast-2'}]}, 'checksum': {'request_algorithm': {'algorithm': 'crc64nvme', 'in': 'trailer', 'name': 'x-amz-checksum-crc64nvme'}}}}
+2025-05-19 17:40:31,506 - ThreadPoolExecutor-0_0 - botocore.hooks - DEBUG - Event request-created.s3.PutObject: calling handler <function signal_not_transferring at 0x0000013CE24A05E0>
+2025-05-19 17:40:31,506 - ThreadPoolExecutor-0_0 - botocore.hooks - DEBUG - Event request-created.s3.PutObject: calling handler <bound method RequestSigner.handler of <botocore.signers.RequestSigner object at 0x0000013CE45C9310>>
+2025-05-19 17:40:31,506 - ThreadPoolExecutor-0_0 - botocore.hooks - DEBUG - Event choose-signer.s3.PutObject: calling handler <function set_operation_specific_signer at 0x0000013CE19E7240>
+2025-05-19 17:40:31,506 - ThreadPoolExecutor-0_0 - botocore.hooks - DEBUG - Event before-sign.s3.PutObject: calling handler <function remove_arn_from_signing_path at 0x0000013CE1A09940>
+2025-05-19 17:40:31,506 - ThreadPoolExecutor-0_0 - botocore.hooks - DEBUG - Event before-sign.s3.PutObject: calling handler <function _set_extra_headers_for_unsigned_request at 0x0000013CE1A09F80>
+2025-05-19 17:40:31,506 - ThreadPoolExecutor-0_0 - botocore.hooks - DEBUG - Event before-sign.s3.PutObject: calling handler <bound method S3ExpressIdentityResolver.resolve_s3express_identity of <botocore.utils.S3ExpressIdentityResolver object at 0x0000013CE4699A90>>
+2025-05-19 17:40:31,506 - ThreadPoolExecutor-0_0 - botocore.auth - DEBUG - Calculating signature using v4 auth.
+2025-05-19 17:40:31,506 - ThreadPoolExecutor-0_0 - botocore.auth - DEBUG - CanonicalRequest:
+PUT
+/path/to/test.txt
+
+content-encoding:aws-chunked
+content-type:text/plain
+host:bucket225125.s3.ap-southeast-2.amazonaws.com
+x-amz-content-sha256:STREAMING-UNSIGNED-PAYLOAD-TRAILER
+x-amz-date:20250519T084031Z
+x-amz-decoded-content-length:12
+x-amz-sdk-checksum-algorithm:CRC64NVME
+x-amz-trailer:x-amz-checksum-crc64nvme
+
+content-encoding;content-type;host;x-amz-content-sha256;x-amz-date;x-amz-decoded-content-length;x-amz-sdk-checksum-algorithm;x-amz-trailer
+STREAMING-UNSIGNED-PAYLOAD-TRAILER
+2025-05-19 17:40:31,506 - ThreadPoolExecutor-0_0 - botocore.auth - DEBUG - StringToSign:
+AWS4-HMAC-SHA256
+20250519T084031Z
+20250519/ap-southeast-2/s3/aws4_request
+db0d36749cf9fd92a2b04af938e6737a4031efc3a30ce6b229a2693c702ee407
+2025-05-19 17:40:31,506 - ThreadPoolExecutor-0_0 - botocore.auth - DEBUG - Signature:
+84af1a2b3463724bb41ca6ee5ab399f7e4191f4cbcf88f4d460a775af6add9ba
+2025-05-19 17:40:31,506 - ThreadPoolExecutor-0_0 - botocore.hooks - DEBUG - Event request-created.s3.PutObject: calling handler <bound method UserAgentString.rebuild_and_replace_user_agent_handler of <botocore.useragent.UserAgentString object at 0x0000013CE2DC1480>>
+2025-05-19 17:40:31,506 - ThreadPoolExecutor-0_0 - botocore.hooks - DEBUG - Event request-created.s3.PutObject: calling handler <function signal_transferring at 0x0000013CE24A0680>
+2025-05-19 17:40:31,507 - ThreadPoolExecutor-0_0 - botocore.endpoint - DEBUG - Sending http request: <AWSPreparedRequest stream_output=False, method=PUT, url=https://bucket225125.s3.ap-southeast-2.amazonaws.com/path/to/test.txt, headers={'x-amz-sdk-checksum-algorithm': b'CRC64NVME', 'Content-Type': b'text/plain', 'User-Agent': b'aws-cli/2.27.17 md/awscrt#0.26.1 ua/2.1 os/windows#11 md/arch#amd64 lang/python#3.13.3 md/pyimpl#CPython m/G cfg/retry-mode#standard md/installer#exe md/prompt#off md/command#s3.cp', 'Expect': b'100-continue', 'Transfer-Encoding': b'chunked', 'Content-Encoding': b'aws-chunked', 'X-Amz-Trailer': b'x-amz-checksum-crc64nvme', 'X-Amz-Decoded-Content-Length': b'12', 'X-Amz-Date': b'20250519T084031Z', 'X-Amz-Content-SHA256': b'STREAMING-UNSIGNED-PAYLOAD-TRAILER', 'Authorization': b'AWS4-HMAC-SHA256 Credential=AKIAVCZAA4XT45PXFB7H/20250519/ap-southeast-2/s3/aws4_request, SignedHeaders=content-encoding;content-type;host;x-amz-content-sha256;x-amz-date;x-amz-decoded-content-length;x-amz-sdk-checksum-algorithm;x-amz-trailer, Signature=84af1a2b3463724bb41ca6ee5ab399f7e4191f4cbcf88f4d460a775af6add9ba'}>
+2025-05-19 17:40:31,507 - ThreadPoolExecutor-0_0 - botocore.httpsession - DEBUG - Certificate path: C:\Program Files\Amazon\AWSCLIV2\awscli\botocore\cacert.pem
+2025-05-19 17:40:31,507 - ThreadPoolExecutor-0_0 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): bucket225125.s3.ap-southeast-2.amazonaws.com:443
+2025-05-19 17:40:32,523 - ThreadPoolExecutor-0_0 - urllib3.connectionpool - DEBUG - https://bucket225125.s3.ap-southeast-2.amazonaws.com:443 "PUT /path/to/test.txt HTTP/1.1" 301 None
+2025-05-19 17:40:32,524 - ThreadPoolExecutor-0_0 - botocore.hooks - DEBUG - Event before-parse.s3.PutObject: calling handler <function _handle_200_error at 0x0000013CE1A09C60>
+2025-05-19 17:40:32,524 - ThreadPoolExecutor-0_0 - botocore.hooks - DEBUG - Event before-parse.s3.PutObject: calling handler <function handle_expires_header at 0x0000013CE1A09A80>
+2025-05-19 17:40:32,524 - ThreadPoolExecutor-0_0 - botocore.parsers - DEBUG - Response headers: {'x-amz-bucket-region': 'ap-northeast-1', 'x-amz-request-id': '7BE916VQP2JHCMCZ', 'x-amz-id-2': 'jMHLNJkEjszqFUUa6PprUdVd05mpizf1Kd2/s8qca3mKLlV552ENopMwJ9R3iqkBfLi9hsknj9Y=', 'Content-Type': 'application/xml', 'Transfer-Encoding': 'chunked', 'Date': 'Mon, 19 May 2025 08:40:32 GMT', 'Connection': 'close', 'Server': 'AmazonS3'}
+2025-05-19 17:40:32,524 - ThreadPoolExecutor-0_0 - botocore.parsers - DEBUG - Response body:
+b'<?xml version="1.0" encoding="UTF-8"?>\n<Error><Code>PermanentRedirect</Code><Message>The bucket you are attempting to access must be addressed using the specified endpoint. Please send all future requests to this endpoint.</Message><Endpoint>bucket225125.s3-ap-northeast-1.amazonaws.com</Endpoint><Bucket>bucket225125</Bucket><RequestId>7BE916VQP2JHCMCZ</RequestId><HostId>jMHLNJkEjszqFUUa6PprUdVd05mpizf1Kd2/s8qca3mKLlV552ENopMwJ9R3iqkBfLi9hsknj9Y=</HostId></Error>'
+2025-05-19 17:40:32,528 - ThreadPoolExecutor-0_0 - botocore.hooks - DEBUG - Event needs-retry.s3.PutObject: calling handler <function _update_status_code at 0x0000013CE1A09DA0>
+2025-05-19 17:40:32,528 - ThreadPoolExecutor-0_0 - botocore.hooks - DEBUG - Event needs-retry.s3.PutObject: calling handler <bound method RetryHandler.needs_retry of <botocore.retries.standard.RetryHandler object at 0x0000013CE4699810>>
+2025-05-19 17:40:32,529 - ThreadPoolExecutor-0_0 - botocore.retries.standard - DEBUG - Not retrying request.
+2025-05-19 17:40:32,529 - ThreadPoolExecutor-0_0 - botocore.hooks - DEBUG - Event needs-retry.s3.PutObject: calling handler <bound method S3RegionRedirectorv2.redirect_from_error of <botocore.utils.S3RegionRedirectorv2 object at 0x0000013CE4699950>>
+2025-05-19 17:40:32,529 - ThreadPoolExecutor-0_0 - botocore.utils - DEBUG - S3 client configured for region ap-southeast-2 but the bucket bucket225125 is in region ap-northeast-1; Please configure the proper region to avoid multiple unnecessary redirects and signing attempts.
+2025-05-19 17:40:32,529 - ThreadPoolExecutor-0_0 - botocore.hooks - DEBUG - Event before-endpoint-resolution.s3: calling handler <function customize_endpoint_resolver_builtins at 0x0000013CE1A099E0>
+2025-05-19 17:40:32,529 - ThreadPoolExecutor-0_0 - botocore.hooks - DEBUG - Event before-endpoint-resolution.s3: calling handler <bound method S3RegionRedirectorv2.redirect_from_cache of <botocore.utils.S3RegionRedirectorv2 object at 0x0000013CE4699950>>
+2025-05-19 17:40:32,529 - ThreadPoolExecutor-0_0 - botocore.regions - DEBUG - Calling endpoint provider with parameters: {'Bucket': 'bucket225125', 'Region': 'ap-northeast-1', 'UseFIPS': False, 'UseDualStack': False, 'ForcePathStyle': False, 'Accelerate': False, 'UseGlobalEndpoint': False, 'Key': 'path/to/test.txt', 'DisableMultiRegionAccessPoints': False, 'UseArnRegion': True}
+2025-05-19 17:40:32,530 - ThreadPoolExecutor-0_0 - botocore.regions - DEBUG - Endpoint provider result: https://bucket225125.s3.ap-northeast-1.amazonaws.com
+2025-05-19 17:40:32,530 - ThreadPoolExecutor-0_0 - botocore.utils - DEBUG - Updating URI from https://bucket225125.s3.ap-southeast-2.amazonaws.com/path/to/test.txt to https://bucket225125.s3.ap-northeast-1.amazonaws.com/path/to/test.txt
+2025-05-19 17:40:32,530 - ThreadPoolExecutor-0_0 - botocore.regions - DEBUG - Selecting from endpoint provider's list of auth schemes: "sigv4". User selected auth scheme is: "None"
+2025-05-19 17:40:32,530 - ThreadPoolExecutor-0_0 - botocore.regions - DEBUG - Selected auth type "v4" as "v4" with signing context params: {'region': 'ap-northeast-1', 'signing_name': 's3', 'disableDoubleEncoding': True}
+2025-05-19 17:40:32,531 - ThreadPoolExecutor-0_0 - botocore.endpoint - DEBUG - Response received to retry, sleeping for 0 seconds
+2025-05-19 17:40:32,531 - ThreadPoolExecutor-0_0 - botocore.awsrequest - DEBUG - Rewinding stream: <botocore.httpchecksum.AwsChunkedWrapper object at 0x0000013CE46B5400>
+2025-05-19 17:40:32,531 - ThreadPoolExecutor-0_0 - botocore.hooks - DEBUG - Event request-created.s3.PutObject: calling handler <function signal_not_transferring at 0x0000013CE24A05E0>
+2025-05-19 17:40:32,531 - ThreadPoolExecutor-0_0 - botocore.hooks - DEBUG - Event request-created.s3.PutObject: calling handler <bound method RequestSigner.handler of <botocore.signers.RequestSigner object at 0x0000013CE45C9310>>
+2025-05-19 17:40:32,531 - ThreadPoolExecutor-0_0 - botocore.hooks - DEBUG - Event choose-signer.s3.PutObject: calling handler <function set_operation_specific_signer at 0x0000013CE19E7240>
+2025-05-19 17:40:32,531 - ThreadPoolExecutor-0_0 - botocore.hooks - DEBUG - Event before-sign.s3.PutObject: calling handler <function remove_arn_from_signing_path at 0x0000013CE1A09940>
+2025-05-19 17:40:32,531 - ThreadPoolExecutor-0_0 - botocore.hooks - DEBUG - Event before-sign.s3.PutObject: calling handler <function _set_extra_headers_for_unsigned_request at 0x0000013CE1A09F80>
+2025-05-19 17:40:32,531 - ThreadPoolExecutor-0_0 - botocore.hooks - DEBUG - Event before-sign.s3.PutObject: calling handler <bound method S3ExpressIdentityResolver.resolve_s3express_identity of <botocore.utils.S3ExpressIdentityResolver object at 0x0000013CE4699A90>>
+2025-05-19 17:40:32,532 - ThreadPoolExecutor-0_0 - botocore.auth - DEBUG - Calculating signature using v4 auth.
+2025-05-19 17:40:32,532 - ThreadPoolExecutor-0_0 - botocore.auth - DEBUG - CanonicalRequest:
+PUT
+/path/to/test.txt
+
+content-encoding:aws-chunked
+content-type:text/plain
+host:bucket225125.s3.ap-northeast-1.amazonaws.com
+x-amz-content-sha256:STREAMING-UNSIGNED-PAYLOAD-TRAILER
+x-amz-date:20250519T084032Z
+x-amz-decoded-content-length:12
+x-amz-sdk-checksum-algorithm:CRC64NVME
+x-amz-trailer:x-amz-checksum-crc64nvme
+
+content-encoding;content-type;host;x-amz-content-sha256;x-amz-date;x-amz-decoded-content-length;x-amz-sdk-checksum-algorithm;x-amz-trailer
+STREAMING-UNSIGNED-PAYLOAD-TRAILER
+2025-05-19 17:40:32,532 - ThreadPoolExecutor-0_0 - botocore.auth - DEBUG - StringToSign:
+AWS4-HMAC-SHA256
+20250519T084032Z
+20250519/ap-northeast-1/s3/aws4_request
+36ec2d9fe8170851f23ff0a99ae0059483c7715ca8ba411db9812ed79f8c7488
+2025-05-19 17:40:32,532 - ThreadPoolExecutor-0_0 - botocore.auth - DEBUG - Signature:
+63ca731e59c66ca7bd14166d83ac0aaf0af031f9574e2930cba1819fa20509f8
+2025-05-19 17:40:32,532 - ThreadPoolExecutor-0_0 - botocore.hooks - DEBUG - Event request-created.s3.PutObject: calling handler <bound method UserAgentString.rebuild_and_replace_user_agent_handler of <botocore.useragent.UserAgentString object at 0x0000013CE2DC1480>>
+2025-05-19 17:40:32,533 - ThreadPoolExecutor-0_0 - botocore.hooks - DEBUG - Event request-created.s3.PutObject: calling handler <function signal_transferring at 0x0000013CE24A0680>
+2025-05-19 17:40:32,533 - ThreadPoolExecutor-0_0 - botocore.endpoint - DEBUG - Sending http request: <AWSPreparedRequest stream_output=False, method=PUT, url=https://bucket225125.s3.ap-northeast-1.amazonaws.com/path/to/test.txt, headers={'x-amz-sdk-checksum-algorithm': b'CRC64NVME', 'Content-Type': b'text/plain', 'User-Agent': b'aws-cli/2.27.17 md/awscrt#0.26.1 ua/2.1 os/windows#11 md/arch#amd64 lang/python#3.13.3 md/pyimpl#CPython m/G cfg/retry-mode#standard md/installer#exe md/prompt#off md/command#s3.cp', 'Expect': b'100-continue', 'Transfer-Encoding': b'chunked', 'Content-Encoding': b'aws-chunked', 'X-Amz-Trailer': b'x-amz-checksum-crc64nvme', 'X-Amz-Decoded-Content-Length': b'12', 'X-Amz-Date': b'20250519T084032Z', 'X-Amz-Content-SHA256': b'STREAMING-UNSIGNED-PAYLOAD-TRAILER', 'Authorization': b'AWS4-HMAC-SHA256 Credential=AKIAVCZAA4XT45PXFB7H/20250519/ap-northeast-1/s3/aws4_request, SignedHeaders=content-encoding;content-type;host;x-amz-content-sha256;x-amz-date;x-amz-decoded-content-length;x-amz-sdk-checksum-algorithm;x-amz-trailer, Signature=63ca731e59c66ca7bd14166d83ac0aaf0af031f9574e2930cba1819fa20509f8'}>
+2025-05-19 17:40:32,533 - ThreadPoolExecutor-0_0 - botocore.httpsession - DEBUG - Certificate path: C:\Program Files\Amazon\AWSCLIV2\awscli\botocore\cacert.pem
+2025-05-19 17:40:32,534 - ThreadPoolExecutor-0_0 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): bucket225125.s3.ap-northeast-1.amazonaws.com:443
+2025-05-19 17:40:32,958 - ThreadPoolExecutor-0_0 - urllib3.connectionpool - DEBUG - https://bucket225125.s3.ap-northeast-1.amazonaws.com:443 "PUT /path/to/test.txt HTTP/1.1" 200 0
+2025-05-19 17:40:32,959 - ThreadPoolExecutor-0_0 - botocore.hooks - DEBUG - Event before-parse.s3.PutObject: calling handler <function _handle_200_error at 0x0000013CE1A09C60>
+2025-05-19 17:40:32,959 - ThreadPoolExecutor-0_0 - botocore.hooks - DEBUG - Event before-parse.s3.PutObject: calling handler <function handle_expires_header at 0x0000013CE1A09A80>
+2025-05-19 17:40:32,959 - ThreadPoolExecutor-0_0 - botocore.parsers - DEBUG - Response headers: {'x-amz-id-2': '2lODm/LFOHc8K4RWbdv6BpCDAhacrgxMgt/StyGXlsfKGVjIGKNz0KAf1U/nA/FBiOifhI85Mn8=', 'x-amz-request-id': '577811BKZXZ5ZAFJ', 'Date': 'Mon, 19 May 2025 08:40:34 GMT', 'x-amz-server-side-encryption': 'AES256', 'ETag': '"b772130fb9ef62ef8ef7b29cbed07113"', 'x-amz-checksum-crc64nvme': 'Qiz6l0jVFb0=', 'x-amz-checksum-type': 'FULL_OBJECT', 'Content-Length': '0', 'Server': 'AmazonS3'}
+2025-05-19 17:40:32,959 - ThreadPoolExecutor-0_0 - botocore.parsers - DEBUG - Response body:
+b''
+2025-05-19 17:40:32,959 - ThreadPoolExecutor-0_0 - botocore.hooks - DEBUG - Event needs-retry.s3.PutObject: calling handler <function _update_status_code at 0x0000013CE1A09DA0>
+2025-05-19 17:40:32,959 - ThreadPoolExecutor-0_0 - botocore.hooks - DEBUG - Event needs-retry.s3.PutObject: calling handler <bound method RetryHandler.needs_retry of <botocore.retries.standard.RetryHandler object at 0x0000013CE4699810>>
+2025-05-19 17:40:32,960 - ThreadPoolExecutor-0_0 - botocore.retries.standard - DEBUG - Not retrying request.
+2025-05-19 17:40:32,960 - ThreadPoolExecutor-0_0 - botocore.hooks - DEBUG - Event needs-retry.s3.PutObject: calling handler <bound method S3RegionRedirectorv2.redirect_from_error of <botocore.utils.S3RegionRedirectorv2 object at 0x0000013CE4699950>>
+2025-05-19 17:40:32,960 - ThreadPoolExecutor-0_0 - botocore.utils - DEBUG - S3 request was previously redirected, not redirecting.
+2025-05-19 17:40:32,960 - ThreadPoolExecutor-0_0 - botocore.hooks - DEBUG - Event after-call.s3.PutObject: calling handler <function enhance_error_msg at 0x0000013CE2A6FEC0>
+2025-05-19 17:40:32,960 - ThreadPoolExecutor-0_0 - botocore.hooks - DEBUG - Event after-call.s3.PutObject: calling handler <bound method RetryQuotaChecker.release_retry_quota of <botocore.retries.standard.RetryQuotaChecker object at 0x0000013CE4698910>>
+Completed 12 Bytes/12 Bytes (8 Bytes/s) with 1 file(s) remaining2025-05-19 17:40:32,960 - ThreadPoolExecutor-0_0 - s3transfer.utils - DEBUG - Releasing acquire 0/None
+upload: .\test.txt to s3://bucket225125/path/to/test.txt        
+2025-05-19 17:40:32,961 - Thread-1 - awscli.customizations.s3.results - DEBUG - Shutdown request received in result processing thread, shutting down result thread.

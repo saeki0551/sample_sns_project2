@@ -24,7 +24,14 @@ Rails.application.routes.draw do
   
   get "/users/:id", to: "users#show"
 
-  resources :posts
+  resources :posts do
+    resource :favorites, only: [:create, :destroy]
+  end
+
+  get "posts/:id/favorites/create", to: "favorites#create"
+
+  get "posts/:id/favorites/destroy", to: "favorites#destroy"
+
 
   get "/posts/:id/destroy", to: "posts#destroy"
 

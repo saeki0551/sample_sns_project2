@@ -3,7 +3,7 @@
     <% if user_signed_in?  %>
         <div class="postsForm-all">
             <h1>新規・更新投稿フォーム</h1>
-            <%= form_with model: @post, local: true do |form| %>
+            <%= form_with model: @post, local: true, html: { multipart: true } do |form| %>
                 <% if @post.new_record? %> <!-- 既にデータベースに保存されているか？ -->
                     <%= render :partial => 'new', :locals => {:form => form} %>
                 <% else %>
@@ -43,6 +43,15 @@
                     </div>
                 </div>
             <% end %>
+
+            <% if post.favorited_by?(current_user) %>
+                <%= link_to "♥", "/posts/#{post.id}/favorites/destroy" %>
+                    <%= post.favorites.count %> いいね
+            <% else %>
+                <%= link_to "♡", "/posts/#{post.id}/favorites/create" %>
+                    <%= post.favorites.count %> いいね
+            <% end %>
+
         </div>
     <% end %>
 </div>

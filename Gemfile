@@ -70,3 +70,5 @@ gem 'rack-cors'
 gem 'rack-rewrite'
 gem 'dotenv-rails'
 gem 'pg'
+
+gem 'aws-sdk-s3', '>= 1.120', '< 2.0'
