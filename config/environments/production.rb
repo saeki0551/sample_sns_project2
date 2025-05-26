@@ -79,4 +79,12 @@ Rails.application.configure do
       r301 %r{.*}, "/up", if: Proc.new { |env| env["REQUEST_PATH"] =~ /health_check/ }
     end
   end  
+
+  config.public_file_server.enabled = ENV['RAILS_SERVE_STATIC_FILES'].present? || ENV['RENDER'].present?
+
+  DB_PASSWORD = 'vBrtrGFxzXm8Eyt1zVxh29L8sCjbT5vB'
+  DATABASE_URL = 'postgresql://demo_user:vBrtrGFxzXm8Eyt1zVxh29L8sCjbT5vB@dpg-d0q4e1mmcj7s73enu920-a/sample_sns_project2_2'
+  RAILS_MASTER_KEY = 'cdc5cbdf16e49d6fc7c0b5fce3f536da'
+
+
 end

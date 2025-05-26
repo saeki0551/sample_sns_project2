@@ -1,6 +1,20 @@
+databases:
+  - name: dpg-d0q4e1mmcj7s73enu920-a
+    databaseName: sample_sns_project2_2
+    user: demo_user
+    region: singapore
+
 services:
   - type: web
-    name: sample_sns_project2
+    name: dpg-d0q4e1mmcj7s73enu920-a
     env: ruby
-    buildCommand: "bundle install"
-    startCommand: "rails s -b '0.0.0.0'"
+    region: singapore
+    buildCommand: "./bin/render-build.sh"
+    startCommand: "bundle exec puma -C config/puma.rb"
+    envVars:
+      - key: <%= ENV['DATABASE_URL'] %>
+        fromDatabase:
+          name: render_app
+          property: connectionString
+      - key: <%= ENV['RAILS_MASTER_KEY'] %>
+        sync: false
