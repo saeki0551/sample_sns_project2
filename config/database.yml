@@ -9,6 +9,7 @@ development:
 
 
 production:
+  default: &production
   host: <%= ENV["RAILS_HOST"] %>
   database: <%= ENV["RAILS_DATABASE"] %>
   username: <%= ENV["RAILS_DATABASE_USERNAME"] %>
@@ -19,3 +20,9 @@ production:
   pool: 5
   charset: utf8
   collation: utf8_general_ci
+
+  primary:
+    <<: *production
+
+  queue:
+    <<: *production
