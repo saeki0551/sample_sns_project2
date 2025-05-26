@@ -9,7 +9,6 @@ development:
 
 
 production:
-  <<: *default
   host: <%= ENV["RAILS_HOST"] %>
   database: <%= ENV["RAILS_DATABASE"] %>
   username: <%= ENV["RAILS_DATABASE_USERNAME"] %>
