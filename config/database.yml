@@ -9,17 +9,7 @@ development:
 
 
 production:
-  primary:
-    adapter: postgresql
-    url: postgresql://sample_sns_project2_db_user:oM7euDL5dorpZd9qS5CA9rRhi6gPohsL@dpg-d068v89r0fns73fcfm30-a.oregon-postgres.render.com/sample_sns_project2_db
-    pool: <%= ENV.fetch("RAILS_MAX_THREADS", 5) %>
-
-  queue:
-    adapter: postgresql
-    url: postgresql://sample_sns_project2_db_user:oM7euDL5dorpZd9qS5CA9rRhi6gPohsL@dpg-d068v89r0fns73fcfm30-a.oregon-postgres.render.com/sample_sns_project2_db
-    pool: <%= ENV.fetch("RAILS_MAX_THREADS", 5) %>
-
-  cache:
-    adapter: postgresql
-    url: postgresql://sample_sns_project2_db_user:oM7euDL5dorpZd9qS5CA9rRhi6gPohsL@dpg-d068v89r0fns73fcfm30-a.oregon-postgres.render.com/sample_sns_project2_db
-    pool: <%= ENV.fetch("RAILS_MAX_THREADS", 5) %>
+  <<: *default
+  adapter: postgresql
+  encoding: unicode
+  url: <%= ENV['DATABASE_URL'] %>
