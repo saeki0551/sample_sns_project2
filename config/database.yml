@@ -9,17 +9,21 @@ development:
 
 
 production:
-  default: &production
-  host: <%= ENV["RAILS_HOST"] %>
-  database: <%= ENV["RAILS_DATABASE"] %>
-  username: <%= ENV["RAILS_DATABASE_USERNAME"] %>
-  password: <%= ENV["RAILS_DATABASE_PASSWORD"] %>
-  adapter: postgresql
-  encoding: utf8
-  reconnect: false
-  pool: 5
-  charset: utf8
-  collation: utf8_general_ci
-
   primary:
-    <<: *production
+    adapter: postgresql
+    encoding: utf8
+    pool: 5
+    host: <%= ENV["RAILS_HOST"] %>
+    database: <%= ENV["RAILS_DATABASE"] %>
+    username: <%= ENV["RAILS_DATABASE_USERNAME"] %>
+    password: <%= ENV["RAILS_DATABASE_PASSWORD"] %>
+
+  queue:
+    adapter: postgresql
+    encoding: utf8
+    pool: 5
+    host: <%= ENV["QUEUE_DB_HOST"] || ENV["RAILS_HOST"] %>
+    database: <%= ENV["QUEUE_DB_NAME"] || ENV["RAILS_QUEUE_DATABASE"] || "sample_sns_queue_production" %>
+    username: <%= ENV["QUEUE_DB_USERNAME"] || ENV["RAILS_DATABASE_USERNAME"] %>
+    password: <%= ENV["QUEUE_DB_PASSWORD"] || ENV["RAILS_DATABASE_PASSWORD"] %>
+
