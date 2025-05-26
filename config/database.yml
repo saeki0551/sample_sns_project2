@@ -10,6 +10,13 @@ development:
 
 production:
   <<: *default
+  host: <%= ENV["RAILS_HOST"] %>
+  database: <%= ENV["RAILS_DATABASE"] %>
+  username: <%= ENV["RAILS_DATABASE_USERNAME"] %>
+  password: <%= ENV["RAILS_DATABASE_PASSWORD"] %>
   adapter: postgresql
-  encoding: unicode
-  url: <%= ENV['DATABASE_URL'] %>
+  encoding: utf8
+  reconnect: false
+  pool: 5
+  charset: utf8
+  collation: utf8_general_ci
