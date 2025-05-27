@@ -44,13 +44,15 @@
                 </div>
             <% end %>
 
-            <% if post.favorited_by?(current_user) %>
-                <%= link_to "♥", "/posts/#{post.id}/favorites/destroy" %>
-                    <%= post.favorites.count %> いいね
-            <% else %>
-                <%= link_to "♡", "/posts/#{post.id}/favorites/create" %>
-                    <%= post.favorites.count %> いいね
+            <% if user_signed_in? %>
+                <% if post.favorited_by?(current_user) %>
+                    <%= link_to "♥", "/posts/#{post.id}/favorites/destroy" %>
+                <% else %>
+                    <%= link_to "♡", "/posts/#{post.id}/favorites/create" %>
+                <% end %>
             <% end %>
+
+            <%= post.favorites.count %> いいね
 
         </div>
     <% end %>
