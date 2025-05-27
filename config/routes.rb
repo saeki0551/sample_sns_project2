@@ -20,9 +20,21 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   root "users#top"
   
-  resources :users, only: [:show]
+  resources :users, only: [:index, :show, :edit, :update] do
+    resource :relationships, only: [:create, :destroy]
+  	get "followings" => "relationships#followings", as: "followings"
+  	get "followers" => "relationships#followers", as: "followers"
+  end
   
+  get "/users/:user_id/relationships/create", to: "relationships#create"
+  get "/users/:user_id/relationships/destroy", to: "relationships#destroy"
+
+  get "/users/:user_id/followings", to: "relationsships#followings"
+  get "/users/:user_id/followers", to: "relationsships#followers"
+
+
   get "/users/:id", to: "users#show"
+
 
   resources :posts do
     resource :favorites, only: [:create, :destroy]

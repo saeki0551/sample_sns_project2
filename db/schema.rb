@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.0].define(version: 2025_05_25_071650) do
+ActiveRecord::Schema[8.0].define(version: 2025_05_27_101455) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "pg_catalog.plpgsql"
 
@@ -56,6 +56,13 @@ ActiveRecord::Schema[8.0].define(version: 2025_05_25_071650) do
     t.string "content"
     t.integer "user_id"
     t.string "phoneNumber"
+  end
+
+  create_table "relationships", force: :cascade do |t|
+    t.integer "follower_id"
+    t.integer "followed_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "solid_cache_entries", force: :cascade do |t|
