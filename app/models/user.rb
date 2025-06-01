@@ -8,7 +8,6 @@ class User < ApplicationRecord
   validates :password, confirmation: { message: "もう一度パスワードを入力してください" }, on: :create
   has_many :posts  
   has_many :favorites, dependent: :destroy
-
   
   # フォローしている関連付け
   has_many :active_relationships, class_name: "Relationship", foreign_key: "follower_id", dependent: :destroy
@@ -18,7 +17,8 @@ class User < ApplicationRecord
   
   # フォローしているユーザーを取得
   has_many :followings, through: :active_relationships, source: :followed
-  
+  validates :followings, uniqueness: true
+
   # フォロワーを取得
   has_many :followers, through: :passive_relationships, source: :follower
   

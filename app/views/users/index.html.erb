@@ -1,0 +1,11 @@
+<p>ユーザー一覧</p>
+<% @users.each do |user| %>
+    <p>ユーザーid</p>
+    <%= user.id %>
+    <%= user.email %>
+
+    <p>フォロー数</p>
+    <%= link_to( user.followings.count,  user_followings_path(user_id: user.id)) %> 
+    <p>フォロワー数</p>
+    <%= link_to( user.followers.count,  user_followers_path(user_id: user.id)) %>
+<% end %>

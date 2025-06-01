@@ -55,13 +55,19 @@
             <%= post.favorites.count %> いいね
 
             <% if user_signed_in? %>
-                <% if current_user.following?(post.user) %>
-                    <%= link_to "フォロー外す", "/users/#{post.user.id}/relationships/destroy" %>
-                <% else %>
-                    <%= link_to "フォローする", "/users/#{post.user.id}/relationships/create" %>
+                <% if current_user != post.user %>
+                    <% if current_user.following?(post.user) %>
+                        <%= link_to "フォロー外す", "/users/#{post.user.id}/relationships/destroy" %>
+                    <% else %>
+                        <%= link_to "フォローする", "/users/#{post.user.id}/relationships/create" %>
+                    <% end %>
                 <% end %>
             <% end %>
 
+            <p>フォロー数</p>
+            <%= post.user.followings.count %>
+            <p>フォロワー数</p>
+            <%= post.user.followers.count %>
         </div>
     <% end %>
 </div>
