@@ -1,5 +1,10 @@
-<p>フォロー一覧</p><br/>
+<h2>Follower Users</h2>
+<% if @users.exists? %>
+  <p>フォロワー一覧</p><br/>
   <% @users.each do |user| %>
-  <%= user.id %>
-  <%= user.email %>
+    <%= user.id %>
+    <%= user.email %>
+  <% end %>
+<% else %>
+  <p>ユーザーはいません</p>
 <% end %>

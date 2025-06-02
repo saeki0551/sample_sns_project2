@@ -66,9 +66,9 @@
             <% end %>
 
             <p>フォロー数</p>
-            <%= post.user.followings.count %>
+            <%= link_to( post.user.followings.count,  user_followings_path(user_id: post.user.id))%>
             <p>フォロワー数</p>
-            <%= post.user.followers.count %>
+            <%= link_to( post.user.followers.count,  user_followers_path(user_id: post.user.id)) %>
         </div>
     <% end %>
 </div>

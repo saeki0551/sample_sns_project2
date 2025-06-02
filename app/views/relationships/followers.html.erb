@@ -1,6 +1,10 @@
 <h2>Follower Users</h2>
 <% if @users.exists? %>
-  <%= render "/users/index", users: @users %>
+  <p>フォロー一覧</p><br/>
+  <% @users.each do |user| %>
+    <%= user.id %>
+    <%= user.email %>
+  <% end %>
 <% else %>
   <p>ユーザーはいません</p>
 <% end %>
