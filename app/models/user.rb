@@ -4,6 +4,8 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
 
+  has_one_attached :avatar
+
   # パスワード確認のカスタムバリデーション
   validates :password, confirmation: { message: "もう一度パスワードを入力してください" }, on: :create
   has_many :posts  
@@ -17,7 +19,6 @@ class User < ApplicationRecord
   
   # フォローしているユーザーを取得
   has_many :followings, through: :active_relationships, source: :followed
-  validates :followings, uniqueness: true
 
   # フォロワーを取得
   has_many :followers, through: :passive_relationships, source: :follower
