@@ -8,7 +8,7 @@ class User < ApplicationRecord
 
   # パスワード確認のカスタムバリデーション
   validates :password, confirmation: { message: "もう一度パスワードを入力してください" }, on: :create
-  has_many :posts  
+  has_many :posts, dependent: :destroy
   has_many :favorites, dependent: :destroy
   
   # フォローしている関連付け
