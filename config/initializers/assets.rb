@@ -12,3 +12,5 @@ Rails.application.config.assets.configure do |env|
   end
   
 Rails.application.config.assets.precompile += %w( controllers/application.js )
+
+Rails.application.config.assets.precompile += ["post_commentsNew.css"]

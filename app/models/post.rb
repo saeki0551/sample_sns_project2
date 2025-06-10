@@ -7,4 +7,7 @@ class Post < ApplicationRecord
     def favorited_by?(user)
         favorites.exists?(user_id: user.id)
     end
+
+    # PostモデルとPostCommentモデルを関連付け
+    has_many :post_comments, dependent: :destroy
 end

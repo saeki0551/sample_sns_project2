@@ -37,4 +37,8 @@ class User < ApplicationRecord
   def following?(user)
     followings.include?(user)
   end
+
+  # UserモデルとPostCommentモデルを関連付け
+  has_many :post_comments, dependent: :destroy
+
 end

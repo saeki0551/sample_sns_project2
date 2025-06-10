@@ -69,6 +69,14 @@
             <%= link_to( post.user.followings.count,  user_followings_path(user_id: post.user.id))%>
             <p>フォロワー数</p>
             <%= link_to( post.user.followers.count,  user_followers_path(user_id: post.user.id)) %>
+
+            <p>コメント</p>
+            <%= link_to "コメントする", "/posts/#{post.id}/post_comments/new" %>
+
+            <p>コメント件数：<%= post.post_comments.count %></p>
+            <% post.post_comments.each do |post_comment| %>
+                <%= post_comment.comment %></br>
+            <% end %>
         </div>
     <% end %>
 </div>
