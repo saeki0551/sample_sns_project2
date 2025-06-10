@@ -40,14 +40,15 @@ Rails.application.routes.draw do
     resource :favorites, only: [:create, :destroy]
     resources :post_comments, only: [:create]
   end
+  
+  get "/posts/:id/destroy", to: "posts#destroy"
 
   get "posts/:id/favorites/create", to: "favorites#create"
   get "posts/:id/favorites/destroy", to: "favorites#destroy"
 
   get "posts/:post_id/post_comments/new", to: "post_comments#new"
-  get "posts/:post_id/post_comments/create", to: "post_comments#create"
+  get "post_comments/:post_comment_id/destroy", to: "post_comments#destroy"
 
-  get "/posts/:id/destroy", to: "posts#destroy"
 
 
 
