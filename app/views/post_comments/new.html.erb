@@ -1,6 +1,6 @@
 <%= stylesheet_link_tag 'post_commentsNew', media: 'all', 'data-turbolinks-track': 'reload' %>
 <div class="post_commentsNew-all">
-    <%= form_with model: [@post, @post_comment] do |form| %>
+    <%= form_with model: [post, post_comment] do |form| %>
         <%= form.text_area :comment, rows: '5', placeholder: "コメントをここに" %>
         <%= form.submit "送信する" %>
     <% end %>

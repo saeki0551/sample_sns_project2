@@ -16,7 +16,11 @@
     <h1>投稿一覧</h1>
     <% @posts.each do |post| %>
         <div class="postsContainer">
-            <p class="iconImg"><%= image_tag post.user.avatar if post.user.avatar.present? %></p>
+            <% if post.user.avatar.present?  %>
+                <p class="iconImg"><%= image_tag post.user.avatar %></p>
+            <% else %>
+                <%= image_tag '/assets/defaultUserIcon.png',:alt => 'デフォルトユーザーアイコン' %>
+            <% end %>
             <p>投稿者ID：<%= link_to( post.user_id, user_path(id: post.user_id)) %></p>
             <p>投稿ID：<%= link_to( post.id, post_path(id: post.id))%></p>
             <p>タイトル</p>
@@ -71,7 +75,9 @@
             <%= link_to( post.user.followers.count,  user_followers_path(user_id: post.user.id)) %>
 
             <p>コメント</p>
-            <%= link_to "コメントする", "/posts/#{post.id}/post_comments/new" %>
+            # <%= link_to "コメントする", "/posts/#{post.id}/post_comments/new" %>
+
+            # <%= render :template => 'post_comments/new', { post_id: post.id } %>
 
             <p>コメント件数：<%= post.post_comments.count %></p>
 

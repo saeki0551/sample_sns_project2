@@ -8,6 +8,7 @@ class PostsController < ApplicationController
         else
             @post = Post.new #空のインスタンスを生成
         end
+        render :template => 'post_comments/new', :locals => { :post_id => @post.id }
     end
 
     def new
