@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   devise_for :users, controllers: {
-    registrations: 'users/registrations'
+    registrations: 'users/registrations',
+    passwords: 'devise/passwords'
   }
   
   devise_scope :user do
@@ -38,7 +39,7 @@ Rails.application.routes.draw do
 
   resources :posts do
     resource :favorites, only: [:create, :destroy]
-    resources :post_comments, only: [:create]
+    resources :post_comments, only: [:new, :create]
   end
   
   get "/posts/:id/destroy", to: "posts#destroy"

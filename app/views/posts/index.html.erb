@@ -77,7 +77,7 @@
             <p>コメント</p>
             # <%= link_to "コメントする", "/posts/#{post.id}/post_comments/new" %>
 
-            # <%= render :template => 'post_comments/new', { post_id: post.id } %>
+            <%= render template: 'post_comments/new', locals: { post: post, post_comment: @post_comment } %>
 
             <p>コメント件数：<%= post.post_comments.count %></p>
 

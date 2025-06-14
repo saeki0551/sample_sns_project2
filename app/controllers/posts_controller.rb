@@ -2,13 +2,13 @@ class PostsController < ApplicationController
 
     def index
         @posts = Post.all.order(updated_at: :desc)
+        @post_comment = PostComment.new
         if params[:id].present?
             @post = Post.find(params[:id])
             @user = User.find_by(id: @post.user_id)
         else
             @post = Post.new #空のインスタンスを生成
         end
-        render :template => 'post_comments/new', :locals => { :post_id => @post.id }
     end
 
     def new
