@@ -3,8 +3,6 @@ require "active_support/core_ext/integer/time"
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
-  config.action_mailer.default_url_options = { host: 'sample-sns.fly.dev' }
-
   # Allow all hosts to make requests to the app
   config.hosts.clear
 
@@ -52,9 +50,6 @@ Rails.application.configure do
   # メール送信エラーを抑制（設定に応じて）
   # config.action_mailer.raise_delivery_errors = false
 
-  # メール送信時のデフォルトURL設定
-  config.action_mailer.default_url_options = { host: "example.com" }
-
   # 国際化（I18n）フォールバックの設定
   config.i18n.fallbacks = true
 
@@ -86,7 +81,7 @@ Rails.application.configure do
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
     port: 587,
-    domain: 'https://sample-sns-project2.onrender.com/',
+    domain: 'sample-sns-project2.onrender.com',
     address: "smtp.gmail.com",
     user_name: ENV["GMAIL_USERNAME"] ,
     password: ENV["GMAIL_PASSWORD"] ,
