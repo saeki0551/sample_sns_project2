@@ -79,7 +79,7 @@ Rails.application.configure do
   # config.generators.apply_rubocop_autocorrect_after_generate!
 
  host = 'localhost:3000'
- config.action_mailer.default_url_options = { protocol: 'https', host: host } # メール内で生成されるURLに関するデフォルトの設定
+ config.action_mailer.default_url_options = { protocol: 'http', host: host } # メール内で生成されるURLに関するデフォルトの設定
  config.action_mailer.raise_delivery_errors = true # メール送信時にエラーが発生した場合、エラーを表示
  config.action_mailer.delivery_method = :smtp # メール送信の方法をSMTP経由に設定
  config.action_mailer.smtp_settings = { # SMTPの設定
