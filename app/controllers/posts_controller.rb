@@ -26,6 +26,7 @@ class PostsController < ApplicationController
         @post.user_id = current_user.id
         # binding.pry
         if @post.save
+            PostMailer.with(user: @post.user).welcome_email.deliver_later
             flash[:notice] = '正常に投稿されました。'
             redirect_to action: 'index' 
         else

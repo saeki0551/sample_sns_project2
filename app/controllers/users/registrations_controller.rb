@@ -2,9 +2,16 @@
 
 class Users::RegistrationsController < Devise::RegistrationsController
   def create
+    # ここでUser.new（と同等の操作）を行う
     build_resource(sign_up_params)
 
+    # ここでUser.save（と同等の操作）を行う
     resource.save
+
+    # 保存後にUserMailerを使ってwelcomeメールを送信
+    # UserMailer.with(user: @user).welcome_email.deliver_later
+
+
     yield resource if block_given?
 
     if resource.persisted?
