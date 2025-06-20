@@ -23,4 +23,4 @@ services:
     name: solid-queue-worker
     env: ruby
     buildCommand: "./bin/render-build.sh"
-    startCommand: "bin/rails solid_queue:start"
+    startCommand: "bundle exec rails solid_queue:start"
